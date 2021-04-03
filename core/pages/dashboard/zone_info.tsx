@@ -24,7 +24,7 @@ const ZoneInfo = (props) => {
   }, [kz_account, kz_system_status]);
 
   if (kz_system_status.data) {
-    if (!kz_system_status.data[location.state.zone]) {
+    if (!kz_system_status.data[location?.state?.zone]) {
       console.log(
         'Absent zone name. Redirecting to dashboard. kz_system_status: ',
         kz_system_status,

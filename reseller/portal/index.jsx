@@ -140,16 +140,6 @@ const ResellerPortal = (props) => {
               type="link"
               style={{ float: 'left', margin: '1em', display: 'flex' }}
             >
-              <Avatar
-                shape="square"
-                src={
-                  child_account.data.name
-                    ? `https://api.adorable.io/avatars/24/${encodeURIComponent(
-                        child_account.data.name,
-                      )}.png`
-                    : 'https://api.adorable.io/avatars/24/justfunnyaccount.png'
-                }
-              />
               <RsChildAccountParagraph
                 fieldKey="name"
                 style={{ fontSize: '1.5em', paddingLeft: '1em' }}
